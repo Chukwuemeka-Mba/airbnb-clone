@@ -6,6 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-radius: 20px;
 }
 
 .nav-icon {
@@ -13,7 +14,9 @@
   height: 50px;
   width: 50px;
 }
-
+.nav-icon-container img {
+  border-radius: 17px;
+}
 .nav-icon-container {
   display: flex;
   flex-direction: row;
@@ -36,4 +39,18 @@
   font-size: 14px;
   font-weight: medium;
   color: rgb(245, 79, 79);
+}
+
+.photo-grid img {
+  margin: 20px 10px;
+  width: 600px;
+}
+
+.content {
+  margin: 10px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+}
+.content p {
+  font-weight: normal;
 }
