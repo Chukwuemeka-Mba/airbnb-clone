@@ -8,17 +8,7 @@ import data from "./data";
 import "./styles/main.css";
 
 const cards = data.map((item) => {
-  return (
-    <Card
-      img={item.coverImg}
-      starIcon="star.png"
-      rating={item.stats.rating}
-      reviewCount={item.stats.reviewCount}
-      country={item.country}
-      title={item.description}
-      price={item.price}
-    ></Card>
-  );
+  return <Card key={item.id} {...item} starIcon="star.png"></Card>;
 });
 
 const App = (
@@ -26,7 +16,7 @@ const App = (
     <Navbar></Navbar>
     <PhotoGrid></PhotoGrid>
     <Content></Content>
-    {cards}
+    <section className="card-container">{cards}</section>
   </div>
 );
 

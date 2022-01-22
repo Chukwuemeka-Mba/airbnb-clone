@@ -24,7 +24,7 @@ export default [
       rating: 5.0,
       reviewCount: 30,
     },
-    country: "Algeria",
+    country: "Online",
     openSpots: 27,
   },
   {
@@ -38,7 +38,7 @@ export default [
       rating: 4.8,
       reviewCount: 2,
     },
-    country: "Norway",
+    country: "  New Zealand",
     openSpots: 3,
   },
 ];

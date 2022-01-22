@@ -62,8 +62,9 @@
 .card-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 30px;
   width: 200px;
   height: 357px;
   margin: 40px 20px;
@@ -83,4 +84,15 @@
 .star {
   width: 20px;
   height: 20px;
+}
+
+.open-spots {
+  position: relative;
+  top: 36px;
+  left: 6px;
+  max-width: 90px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
