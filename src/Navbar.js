@@ -5,7 +5,11 @@ function Navbar() {
     <div>
       <nav className="nav-container">
         <div className="nav-icon-container">
-          <img className="nav-icon" src={require("./images/airbnb.png")} />
+          <img
+            className="nav-icon"
+            src={require("./images/airbnb.png")}
+            alt=""
+          />
           <span>Airbnb</span>
         </div>
 

@@ -4,38 +4,29 @@ import Navbar from "./Navbar";
 import PhotoGrid from "./PhotoGrid";
 import Content from "./Content";
 import Card from "./Card";
-import Contacts from "./Contacts";
+import data from "./data";
 import "./styles/main.css";
+
+const cards = data.map((item) => {
+  return (
+    <Card
+      img={item.coverImg}
+      starIcon="star.png"
+      rating={item.stats.rating}
+      reviewCount={item.stats.reviewCount}
+      country={item.country}
+      title={item.description}
+      price={item.price}
+    ></Card>
+  );
+});
+
 const App = (
   <div>
     <Navbar></Navbar>
     <PhotoGrid></PhotoGrid>
     <Content></Content>
-    <Card></Card>
-    <Contacts
-      img="./images/mr-whiskerson.png"
-      name="Mr. Whiskerson"
-      phone="(212) 555-1234"
-      email="mr.whiskaz@catnap.meow"
-    ></Contacts>
-    <Contacts
-      img="./images/mr-whiskerson.png"
-      name="Mr. Whiskerson"
-      phone="(212) 555-1234"
-      email="mr.whiskaz@catnap.meow"
-    ></Contacts>
-    <Contacts
-      img="./images/mr-whiskerson.png"
-      name="Mr. Whiskerson"
-      phone="(212) 555-1234"
-      email="mr.whiskaz@catnap.meow"
-    ></Contacts>
-    <Contacts
-      img="./images/mr-whiskerson.png"
-      name="Mr. Whiskerson"
-      phone="(212) 555-1234"
-      email="mr.whiskaz@catnap.meow"
-    ></Contacts>
+    {cards}
   </div>
 );
 

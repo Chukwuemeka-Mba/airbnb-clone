@@ -1,20 +1,25 @@
 import React from "react";
-function Card() {
+
+function Card(props) {
   return (
-    <div className="card-container">
+    <div className="">
       <div className="card">
-        <img src={require("./images/swimmer.png")} />
+        <img src={require(`./images/${props.img}`)} alt="" />
         <div className="card-header">
-          <img src={require("./images/star.png")} className="star" />
-          <span>5.0</span>
-          <span>(6)</span>
-          <p>Aquawoman</p>
+          <img
+            src={require(`./images/${props.starIcon}`)}
+            className="star"
+            alt=""
+          />
+          <span>{props.rating}</span>
+          <span>({props.reviewCount})</span>
+          <p>{props.country}</p>
         </div>
         <span>
-          <p>Swimming experiences that bang</p>
+          <p>{props.title}</p>
         </span>
         <p>
-          <strong>From $126</strong> / Person
+          <strong>From ${props.price}</strong> / Person
         </p>
       </div>
     </div>
